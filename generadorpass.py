@@ -5,13 +5,12 @@ import secrets
 # Función para obtener una longitud válida
 def obtener_longitud():
     while True:
-        try:
             longitud = int(input("Ingrese la longitud para la contraseña, debe ser de 8 a 16: "))
             if 8 <= longitud <= 16:
                 return longitud
             else:
                 print("Por favor, ingrese un valor entre 8 y 16.")
-        except ValueError:
+
             print("Por favor, ingrese un número válido.")
 
 # Obtenemos una longitud válida
